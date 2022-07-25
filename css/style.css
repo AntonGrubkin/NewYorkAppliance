@@ -636,7 +636,7 @@ li{
 .block-promo-save{
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: repeat(auto-fill, minmax(800px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
 
 }
 
