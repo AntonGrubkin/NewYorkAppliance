@@ -26,6 +26,31 @@ outNum(2918, 'out-7');
 outNum(5319, 'out-8');
 */
 
+const burger = document.querySelector('.burger');
+const navMenu = document.querySelector('.nav-menu');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    document.querySelector("body").classList.toggle("scroll-hide");
+    document.querySelector("html").classList.toggle("scroll-hide");
+
+})
+
+
+document.querySelectorAll(".nav-link").forEach((link) =>
+  link.addEventListener("click", () => {
+    burger.classList.remove("active");
+    navMenu.classList.remove("active");
+    document.querySelector("body").classList.remove("scroll-hide");
+    document.querySelector("html").classList.remove("scroll-hide");
+
+  })
+ 
+);
+
+
+
 let time = 2, cc = 1;
 
 $(window).scroll(function(){
@@ -59,6 +84,10 @@ $(window).scroll(function(){
     });
 });
 
+
+
+
+
 function onEntry(entry) {
     entry.forEach(change => {
       if (change.isIntersecting) {
@@ -70,10 +99,12 @@ function onEntry(entry) {
   let options = {
     threshold: [0.5] };
   let observer = new IntersectionObserver(onEntry, options);
-  let elements = document.querySelectorAll('#block');
+  let elements = document.querySelectorAll('#block, #block-item');
   
   
   for (let elm of elements) {
     observer.observe(elm);
   }
+
+
 
