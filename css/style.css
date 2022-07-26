@@ -313,19 +313,22 @@ p{
 .previlegy{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
     max-inline-size: 1200px;
     margin-inline: auto;
-    justify-content: space-between;
-
+    width: 100%;
 }
 
 .prev{
     display: flex;
+    box-sizing: border-box;
+    align-items: start;
+    justify-content: center;
+    width: 277px;
     gap: 20px;
-    width: 30%;
-    align-items: flex-start;
-    flex-basis: calc((100% - 100px) / 3);
+
+
 }
 
 .prev p{
@@ -845,19 +848,17 @@ li{
 
 .block-news{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
-    max-inline-size: 1200px;
-    margin-inline: auto;
     padding-top: 40px;
+    width: 100%;
 }
 
 .article{
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
-    width: 277px;
+    flex-basis: 25%;
 }
 
 .pic img{
