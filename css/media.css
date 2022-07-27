@@ -54,6 +54,297 @@
 
     .nav-menu li a {
         font-size: 18px;
+        font-weight: 500;
+        color: #2D2D2D;
+    }
+    .nav-menu li a:hover{
+        color: #7e7e7e;
+    }
+
+    .nav-menu{
+        gap: 45px;
+    }
+
+    .btn-head{
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .active{
+        top: 0;
+        z-index: 999;
+        transition: 0,2s ease ;
+        transition: top 1,5s;
+        opacity: 100;
+
+    }
+
+    /*about*/
+    .block-about{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 100px 0;
+        justify-content: center;
+        text-align: center;
+    }
+    .btns{
+        justify-content: center;
+        
+    }
+
+    .why-us{
+       padding: 60px 0 53px;
+    }
+
+    /*.previlegy*/
+
+    .previlegy{
+        gap: 35px;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+    .prev{
+        display: flex;
+        box-sizing: border-box;
+        align-items: start;
+        justify-content: center;
+        width: 350px;
+        gap: 20px;
+    
+    }
+
+
+    .services-appliance{ 
+        padding: 80 0; 
+    }
+    .statistics{
+        padding: 100px 0;
+    }
+
+
+    .pic-banner{
+        height: 450px;
+        background: url('../image/banner.jpg') no-repeat center top / cover;
+    }
+
+    .text-depend{
+        padding: 100px 75px;
+        text-align: center;
+    }
+    .btns-promo{
+        justify-content: center;
+    }
+
+
+    .testimonials {
+        padding: 100px 0;
+    }
+
+
+    .btns-promo{
+        padding-top: 30px;
+    }
+    .pic-dep{
+        display: none;
+    }
+    .pic-dep img{
+        width: 100%;
+    }
+
+    .brands{
+        padding: 100px 0;
+    }
+    .how-it-works{
+        padding: 100px 0;
+
+    }
+    .problem {
+        padding: 100px 0;
+    }
+
+    .pic-save{
+        height: 450px;
+        background: url('../image/promo-banner.jpg') no-repeat center top / cover;
+    }
+
+
+    .text-save {
+        width: 100%;
+        padding: 100px 50px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+
+
+
+    .block-news{
+        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    }
+
+
+    .rev{
+        width: 100%;
+    }
+
+    .issues{
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .title-works{
+        padding: 0 150px 50px;
+    }
+
+    .steps{
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+        align-items: center;
+
+    }
+
+    .steps-descr{
+        width: 40%;
+        flex-direction: column;
+    
+    }
+
+
+    .information{
+        width: 40%;
+    }
+    .info-block{
+        gap: 60px;
+    }
+
+    .brands-name {
+        text-align: center;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        padding: 40px;
+        border: 2px dashed #CBCBCB;
+    }
+
+    .news {
+        padding: 100px 0;
+    }
+
+    .ftr-content{
+        display: none;
+    }
+
+    .ftr-menu{
+        display: block;
+    }
+
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-device-width: 425px) and (max-device-width: 767px) {
+
+    .bth-head-menu {
+        width: 277px; 
+    }
+
+
+
+
+    .block-about{
+        padding: 70px 0;
+    }
+    .brands {
+        padding: 70px 0;
+    }
+    .statistics {
+        padding: 70px 0;
+    }
+    .testimonials {
+        padding: 70px 0;
+    }
+    .problem {
+        padding: 70px 0;
+    }
+    .news {
+        padding: 70px 0!important;
+    }
+    .how-it-works {
+        padding: 70px 0;
+    }
+    .block-about {
+        padding: 70px 0!important;
+
+    }
+
+
+    .burger{
+        display: block;
+        position: relative;
+        z-index: 300;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .btn-head-mob{
+        display: block;
+    }
+
+
+    .active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(-315deg);
+        transform: translateY(8px) rotate(-315deg);
+        width: 300%;
+    }
+    .active .bar:nth-child(3) {
+        -webkit-transform: translateY(-10px) rotate(-45deg);
+        transform: translateY(-10px) rotate(-45deg);
+        width: 300%;
+    }
+    
+    .nav-menu{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: -100%;
+        left: 0;
+        opacity: 0.9;
+        padding-top: 30px;
+        -webkit-transition: 0.7s;
+        opacity:0;
+        
+    }
+
+    .nav-menu li a {
+        font-size: 18px;
         font-weight: 100;
         color: #2D2D2D;
     }
@@ -79,21 +370,78 @@
 
     }
 
+    h2{
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .tittle h1{
+        font-size: 43px;
+        line-height: 52px;
+        font-weight: 800;
+        letter-spacing: 1.6px;
+    }
+    .tittle span {
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 800;
+        color: #FFFFFF;
+        letter-spacing: 2px;
+    }
+
+    .text-descr {
+        padding-top: 30px;
+    }
+    .btns {
+        padding-top: 38px;
+    }
+    .btns-appliance {
+        padding-top: 40px;
+    }
+    .bth-head-call {
+        width: 100%;
+    }
+    .bth-head-book{
+        width: 100%;
+    }
+
+
+    .btns-appliance {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding-top: 60px;
+    }
+    .btns-promo{
+        padding-top: 37px;
+    }
+
+
     /*about*/
     .block-about{
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
-        padding: 90px 0;
+        padding: 100px 0;
         justify-content: center;
         text-align: center;
     }
     .btns{
         justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
         
     }
 
-    /*.previlegy*/
+    .pic-about img{
+        width: 80%;
+    }
+
+    .why-us{
+       padding: 60px 0 53px;
+    }
+
 
     .previlegy{
         gap: 35px;
@@ -113,77 +461,172 @@
     }
 
 
-
-
-    .services-appliance{
-        padding: 90 0;
+    .services-appliance{ 
+        padding: 80 0; 
     }
 
-    .pic-dep{
-        display: block;
+
+
+    .block-depend{
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 2fr));
+    }
+
+
+    .pic-banner{
+        height: 450px;
+        background: url('../image/banner.jpg') no-repeat center top / cover;
     }
 
     .text-depend{
+        padding: 70px 15px;
         text-align: center;
-        padding: 100px 0px 0px;
     }
 
-    .depend-container{
+    .text-depend span {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 2px;
+        color: #2D2D2D;
+        text-transform: uppercase;
+    }
+
+
+
+    .btns-promo{
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+
+    .pic-save{
+        width: 100%;
+        height: 450px;
+        background: url('../image/promo-banner.jpg') no-repeat center top / cover;
+    }
+
+    .block-promo-save{
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 2fr));
+    }
+
+    .text-save{
+        width: 100%;
+        padding: 70px 15px;
+        align-items: center;
+        justify-content: center;
         display: flex;
+        text-align: center;
+    }
+    
+    .save-container span {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 1.5px;
+        color: #2D2D2D;
+        text-transform: uppercase;
+    }
+    .save-container ol{
+        font-size: 12px;
+        letter-spacing: 1px
+    }
+
+
+    .block-news{
+        gap: 40px;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    .title-works{
+        padding: 0 0 50px;
+    }
+
+    .steps{
         flex-direction: column;
         justify-content: center;
+        gap: 35px;
         align-items: center;
+
+    }
+
+    .steps-descr{
         width: 100%;
-        padding: 0 80px;
-    }
-    .btns-promo{
-        padding-top: 30px;
-    }
-    .pic-dep{
-        padding-top: 70px;
-    }
-    .pic-dep img{
-        width: 100%;
-    }
-
-    .brands{
-        padding: 90px 0;
+        flex-direction: column;
+    
     }
 
 
-    .form{
-        display: none;
+    .information{
+        width: 40%;
+    }
+    .info-block{
+        gap: 60px;
+    }
+
+    .brands-name {
+        text-align: center;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        padding: 40px;
+        border: 2px dashed #CBCBCB;
+    }
+
+    .news {
+        padding: 100px 0;
     }
 
     .ftr-content{
-        flex-direction: column;
-    }
-
-    .content-links {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0 70px;
-    }
-
-    .pic-save{
         display: none;
     }
 
-    .text-save {
-        width: 100%;
-        padding: 100px 50px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        text-align: center;
+    .ftr-menu{
+        display: block;
     }
 
+    .btns-ftr{
+        padding-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .bth-ftr-book{
+        width: 100%;
+    }
+    .bth-ftr-call{
+        width: 100%;
+    }
+
+    .ftr-menu ul {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items:center;
+    }
+    .btns-ftr{
+        padding-top: 60px;
+    }
+
+    .copyright{
+        margin-top: 50px;
+    }
+
+    .footer {
+        display: block;
+        background: #242017;
+        padding: 90px 0;
+    }
     
 
 
-
-
-
-
 }
+

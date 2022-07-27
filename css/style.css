@@ -27,6 +27,82 @@ a{
     text-decoration: none;
 }
 
+/*buttons*/
+
+.bth-head-book{
+    border: 1px solid #242017;
+    width: 244px;
+    padding: 18px 20px;
+    text-align: center;
+    color: #242017;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    align-items:center;
+}
+
+
+.bth-head-call{
+    background-color: #D41850;
+    width: 244px;
+    padding: 18px 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.btn-issues{
+    border: 1px solid #242017;
+    width: 260px;
+    padding: 18px 20px;
+    text-align: center;
+    align-items: center;
+    color: #242017;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+}
+
+.btn-contact{
+    width: 100%;
+    background-color: #D41850;
+    padding: 15px 30px;
+    text-align: center;
+    width: 250px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    align-items: center;
+}
+
+
+.bth-head-menu{
+    background-color: #D41850;
+    width: 244px;
+    padding: 18px 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
 
 
 /*navigation*/
@@ -59,9 +135,6 @@ a{
     list-style: none;
 }
 
-
-
-
 .nav-menu li a {
     font-size: 13px;
     font-weight: 500;
@@ -86,13 +159,13 @@ a{
 
 .bth-head-call{
     background-color: #D41850;
-    width: 244px;
+    width: 277px;
     padding: 18px 20px;
     text-align: center;
 }
-.bth-head-call a{
+.nav-menu a{
     color: #ffffff;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -110,10 +183,15 @@ a{
 
 }
 
+
+.footer{
+    display: none;
+}
+
 /*slider*/
 
 .slider{
-    width: 100%;
+    max-width: 100%;
     background: url('../image/header-background.jpg') no-repeat center top / cover;
 }
 
@@ -244,10 +322,6 @@ a{
 }
 
 
-
-
-
-
 .block-about{
     display: flex;
     gap: 80px;
@@ -262,6 +336,14 @@ h2{
     font-weight: 400;
 }
 
+.pic-about{
+    width: 100%;
+}
+.pic-about img{
+    width: 512px;
+}
+
+
 .text-descr{
     padding-top: 40px;
 }
@@ -274,20 +356,7 @@ p{
     letter-spacing: 1.2px;
 }
 
-.bth-head-book{
-    border: 1px solid #242017;
-    width: 244px;
-    padding: 18px 20px;
-    text-align: center;
-}
-.bth-head-book a{
-    color: #242017;
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1.2px;
-}
+
 
 .btns{
     display: flex;
@@ -490,10 +559,12 @@ p{
 .block-depend{
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(650px, 2fr));
 }
 
 .pic-banner{
+    width: 100%;
+    height: 600px;
     background: url('../image/banner.jpg') no-repeat center top / cover;
 }
 
@@ -502,7 +573,7 @@ p{
 .text-depend{
     background: #F2E7DC;
     width: 100%;
-    padding: 155px 75px;
+    padding: 144px 75px;
 }
 
 .text-depend span{
@@ -515,9 +586,6 @@ p{
     
 }
 
-.depend-container{
-    width: 490px;
-}
 
 .btns-promo{
     display: flex;
@@ -572,8 +640,8 @@ li{
 
 .brands-name {
     display: grid;
-    grid-gap: 0px;
-    grid-template-columns: repeat(auto-fill, minmax(25%, 2fr));
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     padding: 60px;
     margin-top: 45px;
     border: 2px dashed #CBCBCB;
@@ -597,7 +665,7 @@ li{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 20%;
+    width: 250px;
 
 }
 
@@ -605,7 +673,7 @@ li{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 70px;
+    gap: 50px;
     max-inline-size: 1200px;
     margin-inline: auto;
     padding-top: 60px;
@@ -636,17 +704,17 @@ li{
 }
 
 /*Save*/
-
-
 .block-promo-save{
+
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
-
+    grid-template-columns: repeat(auto-fill, minmax(650px, 2fr));
 }
+
 
 .pic-save{
     width: 100%;
+    height: 600px;
     background: url('../image/promo-banner.jpg') no-repeat center top / cover;
 }
 
@@ -655,7 +723,7 @@ li{
 .text-save{
     background: #F2E7DC;
     width: 100%;
-    padding: 155px 90px;
+    padding: 100px 90px;
     align-items: center;
     justify-content: flex-end;
     display: flex;
@@ -812,23 +880,6 @@ li{
     flex-direction: column;
 }
 
-.btn-issues{
-    border: 1px solid #242017;
-    width: 260px;
-    padding: 18px 20px;
-    text-align: center;
-    align-items: center;
-}
-
-.btn-issues a{
-    color: #242017;
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1.2px;
-
-}
 
 .bl-btn {
     display: flex;
@@ -849,18 +900,22 @@ li{
 }
 
 .block-news{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding-top: 40px;
-    width: 100%;
+    padding-top: 45px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(277px, 1fr));
 }
 
+
 .article{
-    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     flex-wrap: wrap;
-    flex-basis: 25%;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+
+
 }
 
 .pic img{
@@ -886,6 +941,7 @@ li{
 /*footer*/
 
 .footer{
+    display: block;
     background: #242017;
     padding: 90px 0;
 }
@@ -923,8 +979,6 @@ h3{
     color: #d4d4d4;
 }
 
-
-
 .form{
     width: 100%;
     margin-top: 35px;
@@ -955,21 +1009,6 @@ h3{
     width: 100%;
 }
 
-.btn-contact{
-    width: 100%;
-    background-color: #D41850;
-    padding: 15px 30px;
-    text-align: center;
-    width: 250px;
-}
-.btn-contact a{
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-
-}
 
 .block-inputs{
     display: flex;
@@ -990,6 +1029,59 @@ h3{
     width: 585px;
 }
 
+
+.ftr-menu ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.ftr-menu ul li {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #818181;
+    letter-spacing: 1.3px;
+
+}
+.bth-ftr-call{
+    width: 100%;
+    background-color: #D41850;
+    padding: 19px 30px;
+    text-align: center;
+    width: 250px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    align-items: center;
+
+}
+.bth-ftr-book{
+    border: 1px solid #8d8d8c;
+    width: 244px;
+    padding: 18px 20px;
+    text-align: center;
+    color: #8d8d8c;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    align-items:center;
+
+}
+.btns-ftr{
+    padding-top: 35px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.ftr-menu{
+    display: none;
+}
+
+
 .copyright{
     margin-top: 40px;
     text-align: center;
@@ -999,6 +1091,62 @@ h3{
     color: #818181;
     text-transform: uppercase;
 }
+
+
+
+
+
+
+/*Problem*/
+
+.block-problems{
+    max-inline-size: 1200px;
+    margin-inline: auto;
+}
+
+.issues-page{
+    background: #FFFFFF;
+    width: 100%;
+}
+
+.issues-page h2{
+    background: #FFFFFF;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.pict-probl-refr{
+    margin-bottom: 40px;
+    height: 450px;
+    background: url('../image/refr-pr.jpg') no-repeat center top / cover;
+}
+
+.pict-probl-range{
+    margin-bottom: 40px;
+    height: 450px;
+    background: url('../image/range-pr.jpg') no-repeat center top / cover;
+}
+.pict-probl-wc{
+    margin-bottom: 40px;
+    height: 450px;
+    background: url('../image/wc-pr.jpg') no-repeat center top / cover;
+}
+
+.dishw-par{
+    margin-bottom: 40px;
+}
+
+.pict-probl-dishw{
+    margin-bottom: 40px;
+    height: 450px;
+    background: url('../image/dshw-pr.jpg') no-repeat center top / cover;
+}
+
+
+.issues-page{
+    padding-bottom: 70px;
+}
+
 
 
 

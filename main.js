@@ -58,7 +58,7 @@ $(window).scroll(function(){
         let
         cPos = $(this).offset().top,
         topWindow = $(window).scrollTop();
-        if (cPos < topWindow + 500) {
+        if (cPos < topWindow + 700) {
             if (cc < 2) {
                 $('.out').addClass('viz');
                 $('div').each(function(){
