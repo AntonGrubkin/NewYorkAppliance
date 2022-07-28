@@ -97,7 +97,7 @@ function onEntry(entry) {
   }
   
   let options = {
-    threshold: [0.5] };
+    threshold: [0.3] };
   let observer = new IntersectionObserver(onEntry, options);
   let elements = document.querySelectorAll('#block, #block-item');
   
@@ -123,3 +123,4 @@ if ($(this).scrollTop() > 80) {
     $('.header-nav-container').removeClass('fixed');
 }
 });
+

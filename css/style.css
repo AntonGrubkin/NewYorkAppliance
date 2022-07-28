@@ -234,6 +234,7 @@ a{
 
 
 
+
 .footer{
     display: none;
 }
@@ -276,7 +277,7 @@ a{
 
 #block{
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(40px);
 }
 #block.element-show{
     opacity: 1;
@@ -286,40 +287,40 @@ a{
 
 #block-item{
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(40px);
 
 }
 #block-item.element-show{
     opacity: 1;
-    transition: all 0.5s;
+    transition: all 1s;
     transform: translateY(0%);
 }
 
-#block-item:nth-child(2){
+/*#block-item:nth-child(2){
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(30px);
 }
 
 #block-item.element-show:nth-child(2){
     opacity: 1;
-    transition: all 0.6s;
+    transition: all 0.4s;
     transform: translateY(0%);
 }
 
 #block-item:nth-child(3){
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(40px);
 }
 
 #block-item.element-show:nth-child(3){
     opacity: 1;
-    transition: all 0.7s;
+    transition: all 0.6s;
     transform: translateY(0%);
 }
 
 #block-item:nth-child(4){
     opacity: 0;
-    transform: translateY(80px);
+    transform: translateY(50px);
 }
 
 #block-item.element-show:nth-child(4){
@@ -330,18 +331,18 @@ a{
 
 #block-item:nth-child(5){
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(60px);
 }
 
 #block-item.element-show:nth-child(5){
     opacity: 1;
-    transition: all 0.9s;
+    transition: all 0.8s;
     transform: translateY(0%);
 }
 
 #block-item:nth-child(6){
     opacity: 0;
-    transform: translateY(120px);
+    transform: translateY(70px);
 }
 
 #block-item.element-show:nth-child(6){
@@ -352,7 +353,7 @@ a{
 
 #block-item:nth-child(7){
     opacity: 0;
-    transform: translateY(140px);
+    transform: translateY(80px);
 }
 
 #block-item.element-show:nth-child(7){
@@ -363,14 +364,14 @@ a{
 
 #block-item:nth-child(8){
     opacity: 0;
-    transform: translateY(160px);
+    transform: translateY(90px);
 }
 
 #block-item.element-show:nth-child(8){
     opacity: 1;
     transition: all 1.3s;
     transform: translateY(0%);
-}
+}*/
 
 
 .block-about{
