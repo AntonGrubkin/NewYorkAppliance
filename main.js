@@ -108,3 +108,18 @@ function onEntry(entry) {
 
 
 
+  /*$(function () {
+    var element = $("#header-nav-container"), display;
+    $(window).scroll(function () {
+    display = $(this).scrollTop() <= 250;
+    display != element.css('opacity') && element.stop().animate({ 'opacity': display }, 200);
+    });
+    });*/
+
+$(window).scroll(function(){
+if ($(this).scrollTop() > 80) {
+    $('.header-nav-container').addClass('fixed');
+} else {
+    $('.header-nav-container').removeClass('fixed');
+}
+});

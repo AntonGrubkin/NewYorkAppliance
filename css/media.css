@@ -1,6 +1,8 @@
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
-
+    .stick-block-phone{
+        display: block;
+    }
     .burger{
         display: block;
         position: relative;
@@ -38,7 +40,7 @@
         width: 100%;
         height: 100%;
         position: fixed;
-        background-color: rgb(255, 255, 255);
+        background-color: #242017;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -55,10 +57,10 @@
     .nav-menu li a {
         font-size: 18px;
         font-weight: 500;
-        color: #2D2D2D;
+        color: #a8a8a8;
     }
     .nav-menu li a:hover{
-        color: #7e7e7e;
+        color: #646464;
     }
 
     .nav-menu{
@@ -262,7 +264,14 @@
         width: 277px; 
     }
 
+    .stick-block-phone{
+        display: block;
+    }
 
+    .btn-stick-phone{
+        left: 12px;
+    
+    }
 
 
     .block-about{
@@ -329,7 +338,7 @@
         width: 100%;
         height: 100%;
         position: fixed;
-        background-color: rgb(255, 255, 255);
+        background-color: #242017;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -346,7 +355,7 @@
     .nav-menu li a {
         font-size: 18px;
         font-weight: 100;
-        color: #2D2D2D;
+        color: #a8a8a8;
     }
     .nav-menu li a:hover{
         color: #7e7e7e;
@@ -373,6 +382,11 @@
     h2{
         font-size: 30px;
         line-height: 42px;
+    }
+
+    .tittle {
+        text-align: center;
+        padding: 140px 0;
     }
 
     .tittle h1{
@@ -419,6 +433,7 @@
 
 
     /*about*/
+
     .block-about{
         display: flex;
         flex-wrap: wrap;

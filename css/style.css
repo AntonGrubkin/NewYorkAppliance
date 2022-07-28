@@ -11,6 +11,8 @@ body {
 }
 
 .scroll-hide {overflow: hidden; }
+html {scroll-behavior: smooth;}
+
 
 .container{
     max-width: 1200px;
@@ -103,6 +105,35 @@ a{
     letter-spacing: 1.2px;
 }
 
+.stick-block-phone{
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 43px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    display: none;
+    
+}
+
+.btn-stick-phone{
+    background-color: #D41850;
+    width: 350px;
+    padding: 18px 80px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    position: relative;
+    left: 32%;
+
+}
+
 
 
 /*navigation*/
@@ -139,7 +170,7 @@ a{
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 1.5px;
-    color: #676767;
+    color: #a8a8a8;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -179,9 +210,28 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 20px 0;
 
 }
+
+.header-nav-container{
+    width: 100%;
+    background-color: #242017;
+    top: -150px;
+    transition: top 1s;
+    z-index: 9999;
+
+}
+.header-nav-container.fixed{
+    position: fixed;
+    width: 100%;
+    background-color: #242017;
+    top: 0;
+
+}
+
+
+
 
 
 .footer{
@@ -191,6 +241,7 @@ a{
 /*slider*/
 
 .slider{
+
     max-width: 100%;
     background: url('../image/header-background.jpg') no-repeat center top / cover;
 }
@@ -1099,55 +1150,216 @@ h3{
 
 /*Problem*/
 
-.block-problems{
+.problem-page{
     max-inline-size: 1200px;
     margin-inline: auto;
+    padding: 50px 0;
 }
 
-.issues-page{
-    background: #FFFFFF;
+.general-block{
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    gap: 20px;
+
+}
+
+.descr-row{
+
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+    width: 66.66%;
+}
+.gener-descr h2{
+    margin: 50px 0 30px;
+    
+}
+
+.pic-refr{
     width: 100%;
-}
-
-.issues-page h2{
-    background: #FFFFFF;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.pict-probl-refr{
-    margin-bottom: 40px;
-    height: 450px;
+    height: 400px;
     background: url('../image/refr-pr.jpg') no-repeat center top / cover;
 }
 
-.pict-probl-range{
-    margin-bottom: 40px;
-    height: 450px;
-    background: url('../image/range-pr.jpg') no-repeat center top / cover;
-}
-.pict-probl-wc{
-    margin-bottom: 40px;
-    height: 450px;
-    background: url('../image/wc-pr.jpg') no-repeat center top / cover;
+.descr-row h3{
+    color: #2D2D2D;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 50px;
 }
 
-.dishw-par{
-    margin-bottom: 40px;
+.descr-pr span{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
-.pict-probl-dishw{
-    margin-bottom: 40px;
-    height: 450px;
-    background: url('../image/dshw-pr.jpg') no-repeat center top / cover;
+.descr-pr p{
+    margin-top: 10px;
+}
+
+.descr-pr{
+    background-color: #f8f8f8;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+.block-br{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-inline-size: 1200px;
+    margin-inline: auto;
+    margin-top: 15px;
+}
+.brand-item{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    text-align: center;
+    background-color: #242017;
+    padding: 12px;
 }
 
 
-.issues-page{
-    padding-bottom: 70px;
+.brand-item a{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+
+}
+.brand-item:hover{
+    cursor: pointer;
+    background-color: #D41850;
+}
+
+.sitebar-row{
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 10px;
+    width: 33.33%;
+}
+
+.category span{
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #2D2D2D;
+}
+.category{
+    padding: 35px;
+    background-color: #f9f4f0;
+    width: 100%;
+}
+.category a{
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    line-height: 35px;
+    background-color: #2D2D2D;
+    padding: 5px 15px;
+    width: 100%;
+}
+.category a:hover{
+    background-color: #D41850;
+}
+.category ul{
+    padding-top: 20px;
+}
+
+.banner-sitebar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 70px;
+    background-color: #A4A4A4;
+    width: 100%;
+    padding: 150px 0;
+    margin-top: 20px;
+    background: url('../image/Miele+Ranges.jpg') no-repeat center top / cover;
+}
+.banner-sitebar span{
+    color: #FFFFFF;
+    font-size: 62px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sitebar-info{
+    padding: 35px;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #2D2D2D;
+}
+
+.sitebar-info{
+    margin-top: 20px;
+    padding: 35px;
+    background-color: #f9f4f0;
+    width: 100%;
+}
+
+.btns-sitebar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btns-sitebar{
+    margin-top: 30px;
+}
+
+.bth-head-book {
+    width: 277px;
+}
+.sitebar-info p{
+    padding-top: 25px;
 }
 
 
+/*washer*/
+.pic-washer{
+    width: 100%;
+    height: 400px;
+    background: url('../image/washer-repair.jpg') no-repeat center top / cover;
+}
+
+.descr-pr-washer{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    background-color: #f8f8f8;
+    padding: 25px;
+
+
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.descr-pr-washer span{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.descr-pr-washer{
+    margin-top: 15px;
+}
 
 
 
