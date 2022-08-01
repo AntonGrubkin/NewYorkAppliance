@@ -1302,14 +1302,11 @@ h3{
     font-weight: 700;
     letter-spacing: 1px;
     color: #2D2D2D;
-}
-
-.sitebar-info{
     margin-top: 20px;
-    padding: 35px;
     background-color: #f9f4f0;
     width: 100%;
 }
+
 
 .btns-sitebar{
     display: flex;
@@ -1361,6 +1358,128 @@ h3{
 .descr-pr-washer{
     margin-top: 15px;
 }
+
+.brand-all-descr h3{
+    padding-bottom: 10px;
+}
+
+.all-pic-brands{
+    width: 100%;
+    height: 400px;
+    background: url('../image/al-brands-pic.jpg') no-repeat center top / cover;
+
+}
+
+.price-page{
+    max-inline-size: 1200px;
+    margin-inline: auto;
+    padding: 50px 0;
+}
+
+.price-itm{
+    background-color: #f8f8f8;
+    padding: 35px;
+
+}
+
+.price-itm h3{
+    font-size: 21px;
+    color: #2D2D2D;
+    margin-bottom: 15px;
+}
+
+.bl-pr span{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.bl-pr{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bl-pr span:nth-child(2){
+    margin-top: 10px;
+}
+.btns-price{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.price-itm{
+    display: flex;
+    gap: 50px;
+}
+
+.block-price{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.price-theme{
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+    display: flex;
+    gap: 50px;
+    background: url('../image/price-refr.jpg') no-repeat center top / cover;
+}
+
+.price-theme:nth-child(2){
+    background: url('../image/price-range.jpg') no-repeat center top / cover;
+
+}
+.price-theme:nth-child(3){
+    background: url('../image/price-washer.jpg') no-repeat center top / cover;
+
+}
+.price-theme:nth-child(4){
+    background: url('../image/price-oven.jpg') no-repeat center top / cover;
+
+}
+.price-theme:nth-child(5){
+    background: url('../image/price-cooktop.jpg') no-repeat center top / cover;
+}
+.price-theme:nth-child(6){
+    background: url('../image/price-winecooler.jpg') no-repeat center top / cover;
+}
+.price-theme:nth-child(7){
+    background: url('../image/price-dishwasher.jpg') no-repeat center top / cover;
+}
+.price-theme:nth-child(8){
+    background: url('../image/price-dryer.jpg') no-repeat center top / cover;
+}
+
+
+.ttl-pr h3{
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.price-bnr-info{
+    background-color: #ffffff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-bnr-info span{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
+
+.price-bnr-info span:nth-child(2){
+    padding-top: 10px;
+}
+
 
 
 
