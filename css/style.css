@@ -111,15 +111,15 @@ a{
     padding: 43px;
     position: fixed;
     bottom: 0;
-    z-index: 1000;
+    z-index: 777;
     display: none;
     
 }
 
 .btn-stick-phone{
     background-color: #D41850;
-    width: 350px;
-    padding: 18px 80px;
+    width: 250px;
+    padding: 18px 50px;
     text-align: center;
     color: #ffffff;
     font-size: 14px;
@@ -130,7 +130,7 @@ a{
     font-weight: 600;
     letter-spacing: 1.2px;
     position: relative;
-    left: 32%;
+    left: 35%;
 
 }
 
