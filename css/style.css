@@ -43,6 +43,7 @@ a{
     text-decoration: none;
     letter-spacing: 1.2px;
     align-items:center;
+    line-height: 18px;
 }
 
 
@@ -59,6 +60,7 @@ a{
     align-items: center;
     font-weight: 600;
     letter-spacing: 1.2px;
+    line-height: 18px;
 }
 
 .btn-issues{
@@ -73,6 +75,7 @@ a{
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1.2px;
+    line-height: 18px;
 }
 
 .btn-contact{
@@ -87,6 +90,7 @@ a{
     font-weight: 600;
     letter-spacing: 1.2px;
     align-items: center;
+    line-height: 18px;
 }
 
 
@@ -103,6 +107,7 @@ a{
     align-items: center;
     font-weight: 600;
     letter-spacing: 1.2px;
+    line-height: 18px;
 }
 
 .stick-block-phone{
@@ -203,6 +208,7 @@ a{
     font-weight: 600;
     letter-spacing: 1.2px;
 
+
 }
 
 
@@ -277,7 +283,7 @@ a{
 
 #block{
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(20px);
 }
 #block.element-show{
     opacity: 1;
@@ -287,7 +293,7 @@ a{
 
 #block-item{
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(20px);
 
 }
 #block-item.element-show{
