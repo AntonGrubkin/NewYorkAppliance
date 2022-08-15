@@ -1,8 +1,16 @@
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
     .stick-block-phone{
-        display: block;
+        display: flex;
+        justify-content: center;
     }
+
+    .btn-stick-phone {
+        width: 277px;
+    }
+
+
+
     .burger{
         display: block;
         position: relative;
@@ -307,9 +315,6 @@
 
 
 
-
-
-
 @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
 
     .bth-head-menu {
@@ -317,12 +322,12 @@
     }
 
     .stick-block-phone{
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 
-    .btn-stick-phone{
-        left: 12px;
-    
+    .btn-stick-phone {
+        width: 277px;
     }
 
 

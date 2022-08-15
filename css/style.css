@@ -113,17 +113,16 @@ a{
 .stick-block-phone{
     width: 100%;
     background-color: #f1f1f1;
-    padding: 43px;
+    padding: 20px;
     position: fixed;
     bottom: 0;
     z-index: 777;
     display: none;
-    
 }
 
 .btn-stick-phone{
     background-color: #D41850;
-    width: 250px;
+    width: 100%;
     padding: 18px 50px;
     text-align: center;
     color: #ffffff;
@@ -134,8 +133,6 @@ a{
     align-items: center;
     font-weight: 600;
     letter-spacing: 1.2px;
-    position: relative;
-    left: 35%;
 
 }
 
@@ -302,82 +299,6 @@ a{
     transform: translateY(0%);
 }
 
-/*#block-item:nth-child(2){
-    opacity: 0;
-    transform: translateY(30px);
-}
-
-#block-item.element-show:nth-child(2){
-    opacity: 1;
-    transition: all 0.4s;
-    transform: translateY(0%);
-}
-
-#block-item:nth-child(3){
-    opacity: 0;
-    transform: translateY(40px);
-}
-
-#block-item.element-show:nth-child(3){
-    opacity: 1;
-    transition: all 0.6s;
-    transform: translateY(0%);
-}
-
-#block-item:nth-child(4){
-    opacity: 0;
-    transform: translateY(50px);
-}
-
-#block-item.element-show:nth-child(4){
-    opacity: 1;
-    transition: all 0.8s;
-    transform: translateY(0%);
-}
-
-#block-item:nth-child(5){
-    opacity: 0;
-    transform: translateY(60px);
-}
-
-#block-item.element-show:nth-child(5){
-    opacity: 1;
-    transition: all 0.8s;
-    transform: translateY(0%);
-}
-
-#block-item:nth-child(6){
-    opacity: 0;
-    transform: translateY(70px);
-}
-
-#block-item.element-show:nth-child(6){
-    opacity: 1;
-    transition: all 1s;
-    transform: translateY(0%);
-}
-
-#block-item:nth-child(7){
-    opacity: 0;
-    transform: translateY(80px);
-}
-
-#block-item.element-show:nth-child(7){
-    opacity: 1;
-    transition: all 1.2s;
-    transform: translateY(0%);
-}
-
-#block-item:nth-child(8){
-    opacity: 0;
-    transform: translateY(90px);
-}
-
-#block-item.element-show:nth-child(8){
-    opacity: 1;
-    transition: all 1.3s;
-    transform: translateY(0%);
-}*/
 
 
 .block-about{
