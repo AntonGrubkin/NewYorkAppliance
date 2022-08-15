@@ -306,6 +306,17 @@
         gap: 30px;
         background: url('../image/price-refr.jpg') no-repeat center top / cover;
     }
+
+    .brand-item {
+        width: 235px;
+        text-align: center;
+    }
+
+    .block-br{
+        justify-content: space-between;
+    }
+    
+    
     
 
 
@@ -748,6 +759,15 @@
         flex-wrap: wrap;
         gap: 30px;
         background: url('../image/price-refr.jpg') no-repeat center top / cover;
+    }
+
+    .brand-item {
+        width: 175px;
+        text-align: center;
+    }
+
+    .block-br{
+        justify-content: space-between;
     }
     
     
